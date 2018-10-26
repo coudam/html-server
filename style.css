@@ -1,0 +1,47 @@
+#main{
+	position: absolute;
+	left: 33%;
+	top: 15%;
+	height: 40%;
+	width: 30%;
+	background: #73768B;
+	opacity: 0.7;
+	border-radius: 2%;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#inputBox{
+	margin: 13% 5%;
+	width: 80%;
+	height: 20%;
+}
+
+#outputBox{
+	margin: 13% 5%;
+	width: 80%;
+	height: 20%;
+}
+
+#box{
+	font-size: 20px;
+	margin: 5% 10% 10%;
+	width: 80%;
+	border-radius: 3px;
+	border: 3px solid #2C3045;
+}
+
+#input{
+	padding: 2%;
+	border: 1px solid #949FA8; 
+	border-radius: 4%;
+	opacity: 0.7;
+	background: #B7DCE8;
+	font-size: 30px;
+}
+
+body{
+	height: 100%;
+	width:100%;
+	background: #B7DCE8;
+}
+
