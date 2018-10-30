@@ -1,4 +1,6 @@
-package main
+package func main() {
+  
+}
 
 import (
   "fmt"
@@ -8,7 +10,7 @@ import (
 
 const (
   CONN_HOST = "lab.posevin.com"
-  CONN_PORT = "4001"
+  CONN_PORT = "4011"
   CONN_TYPE = "tcp"
 )
 
