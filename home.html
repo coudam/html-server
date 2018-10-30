@@ -10,12 +10,15 @@
   			<p style="margin: 2% 35%; width: 80%; font-size: 24px"> Talk with server
   			<div id="box">
   				<div id="inputBox">
-  					<input type="text" id="input" placeholder="Please write something ..">  					
+  					<p> Client:
+  					<input type="text" id="input" placeholder="Please write something .." onkeydown="if(event.keyCode==13){sendMess();this.placeholder='wait for answer..';this.value='';}">  					
   				</div>
   				<div id="outputBox" >
-  					<input type="output" onfocus="document.getElementById('input').focus();" id="input" placeholder="I'm waiting for your messag"> 
+  					<p> Server:
+  					<input type="output" onfocus="document.getElementById('input').focus();" id="input" placeholder="I'm waiting for your messag" > 
   				</div>
   			</div>
   		</div>
 	</body>
+	<script src="./script.js"></script>
 </html>

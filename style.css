@@ -2,12 +2,15 @@
 	position: absolute;
 	left: 33%;
 	top: 15%;
-	height: 40%;
 	width: 30%;
 	background: #73768B;
 	opacity: 0.7;
 	border-radius: 2%;
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+p{
+	font-size: 20px
 }
 
 #inputBox{
@@ -25,7 +28,6 @@
 #box{
 	font-size: 20px;
 	margin: 5% 10% 10%;
-	width: 80%;
 	border-radius: 3px;
 	border: 3px solid #2C3045;
 }
