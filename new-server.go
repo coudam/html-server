@@ -12,10 +12,17 @@ var upgrader = websocket.Upgrader{
 	WriteBufferSize: 2048,
 	CheckOrigin: func(e *http.Request) bool{ return true ;},
 }
+/*
+const {
+	url := "http://lab.posevin.com"
+	port := ":4111"
+}*/
 
 
 func convertMess(str []byte) string {
-	i:=0
+	mode:= int(str[0])
+	fmt.Println(mode)
+	i:=1
 	t:= ""
 	l:= len(str)
 	for  i < l && str[i]!= ' ' {
@@ -31,9 +38,16 @@ func convertMess(str []byte) string {
 	i+=2
 
 	key%=26
+	if mode== 49{
+		key*=-1
+	}
 	ans:= ""
-	for i< l && str[i]!= ' ' {
-		ans+= string(int('a')+ (int(str[i])- int('a')+key)%26)
+	for i< l  {
+		if (str[i]!=' '){
+			ans+= string(int('a')+ (int(str[i])- int('a')+key)%26)
+		} else {
+			ans+=" "
+		}
 		i++
 	}
 

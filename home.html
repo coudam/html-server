@@ -6,19 +6,23 @@
 		<title>lol</title>
 		<link href="./style.css" rel="stylesheet">
 	</head>
-  	<body>
+  	<body id="back">
   		<div id="main">
-  			<p style="margin: 2% 35%; width: 80%; font-size: 24px"> Talk with server
+  			<p style="margin: 0% 35%; width: 80%; font-size: 24px"> Talk with server
+  			<input type="image" id="rev" src="conv.png" width="50px" height="50px" onclick="revers()">
   			<div id="box">
   				<div id="inputBox">
   					<p> Client:
-  					<input type="text" id="input" placeholder="Please write something .." onkeydown="if(event.keyCode==13){sendMess();this.placeholder='wait for answer..';this.value='';}">  					
+  					<input type="text" id="input" placeholder="Please write something.." onkeydown="if(event.keyCode==13){sendMess();this.placeholder='waiting for your next massage.. ('+t;this.value='';} else {document.getElementById('output').value=''; document.getElementById('status').innerHTML= 'waiting ('+t;}">  					
   				</div>
   				<div id="outputBox" >
   					<p> Server:
   					<input type="output" onfocus="document.getElementById('input').focus();" id="output" placeholder="I'm waiting for your messag" > 
   				</div>
   			</div>
+  		</div>
+  		<div id="statusBox">
+  			Status: <div id="status"> Hello</div >
   		</div>
 	</body>
 	<script src="./script.js"></script>
