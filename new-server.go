@@ -32,9 +32,7 @@ func convertMess(str []byte) string {
 
 	key%=26
 	ans:= ""
-	fmt.Println(key)
 	for i< l && str[i]!= ' ' {
-		fmt.Println(int(str[i]))
 		ans+= string(int('a')+ (int(str[i])- int('a')+key)%26)
 		i++
 	}
