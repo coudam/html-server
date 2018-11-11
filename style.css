@@ -1,9 +1,9 @@
 #main{
 	position: absolute;
 	left: 33%;
-	top: 15%;
+	top: 17%;
 	width: 30%;
-	background: #73768B ;
+	background: #ADB2E6 ;
 	opacity: 0.83;
 	border-radius: 2%;
 	box-shadow: 0 0 30px rgba(0,0,0,0.7);
@@ -55,12 +55,12 @@ input{
 body{
 	height: 100%;
 	width:100%;
-	background: url(f0.png );
+	background: url(f0.png);
 }
 
 #statusBox{
 	position: absolute;
 	font-size: 30px;
-	top: 1%;
+	top: 5%;
 	left: 42%;
 }
