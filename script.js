@@ -1,7 +1,8 @@
-var socket = new WebSocket("ws://localhost:8080/echo");
-
+//var socket = new WebSocket("ws://localhost:8080/echo");
+var socket = new WebSocket("ws://lab.posevin.com:4111");
 var pos =0;
 document.getElementById("input").focus();
+
 
 socket.onopen = function() {
 };

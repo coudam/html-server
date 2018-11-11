@@ -7,7 +7,10 @@
 	opacity: 0.83;
 	border-radius: 2%;
 	box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
 
+*{
+	overflow: hidden;
 }
 
 p{
@@ -26,7 +29,7 @@ input{
 }
 
 #inputBox{
-	margin: 13% 5%;
+	margin: 10% 5%;
 	width: 80%;
 	height: 20%;
 }
@@ -49,6 +52,7 @@ input{
 	border: 1px solid #949FA8; 
 	border-radius: 4%;
 	background: #B7DCE8;
+	outline: 0;
 	font-size: 30px;
 }
 
