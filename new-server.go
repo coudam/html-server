@@ -19,9 +19,17 @@ const {
 }*/
 
 
+func mod(a int , b int) int { 
+	if a <0{
+		return b+a
+	}
+	return a%b
+
+
+}
+
 func convertMess(str []byte) string {
 	mode:= int(str[0])
-	fmt.Println(mode)
 	i:=1
 	t:= ""
 	l:= len(str)
@@ -44,7 +52,8 @@ func convertMess(str []byte) string {
 	ans:= ""
 	for i< l  {
 		if (str[i]!=' '){
-			ans+= string(int('a')+ (int(str[i])- int('a')+key)%26)
+			fmt.Println(mod((int(str[i])- int('a')+key),26))
+			ans+= string(int('a')+ mod((int(str[i])- int('a')+key),26))
 		} else {
 			ans+=" "
 		}

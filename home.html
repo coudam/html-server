@@ -14,7 +14,7 @@
   			<div id="box">
   				<div id="inputBox">
   					<p> Client:
-  					<input type="text" id="input" placeholder="Please write something.." onkeydown="if(event.keyCode==13){sendMess();this.placeholder='waiting for your next massage.. ('+t;this.value='';} else {document.getElementById('output').value=''; document.getElementById('status').innerHTML= 'waiting ('+t;}">  					
+  					<input type="text" id="input" placeholder="Please write something.." onkeydown="if(event.keyCode==13){if (pass){sendMess();this.placeholder='waiting for your next massage.. ('+t;this.value='';} else {alert('error of conn')}} else {document.getElementById('output').value=''; document.getElementById('status').innerHTML= 'waiting ('+t;}">  					
   				</div>
   				<div id="outputBox" >
   					<p> Server:

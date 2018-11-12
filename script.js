@@ -1,10 +1,11 @@
-//var socket = new WebSocket("ws://localhost:8080/echo");
-var socket = new WebSocket("ws://lab.posevin.com:4111");
+var socket = new WebSocket("ws://localhost:8080/echo");
+//var socket = new WebSocket("ws://lab.posevin.com:4111");
 var pos =0;
 document.getElementById("input").focus();
-
+var pass= false;
 
 socket.onopen = function() {
+	pass=true;
 };
 
 var t = "encryption)";
